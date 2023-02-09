@@ -17,8 +17,7 @@ const libros = require(__dirname + '/routes/libros');
 const autores = require(__dirname + '/routes/autores');
 
 // Conectar con BD en Mongo 
-mongoose.connect('mongodb://127.0.0.1:27017/libros', 
-    {useNewUrlParser: true});
+mongoose.connect('mongodb://mymongodb/libros', {useNewUrlParser: true}); 
 
 // Inicializar Express
 let app = express();
